@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+:root{
+    --color:rgba(245, 56, 56, 0.986);
+}
+
+.container{
+    display: flex;
+    /* border: 2px solid firebrick; */
+    justify-content: space-between;
+    height: 4em;
+}
+
+
+.logo{
+    font-size: 2em;
+    margin-left: 4rem;
+    font-family: 'Niconne', cursive;
+    transition: text-decoration 1s none;
+}
+
+.logo:hover{
+    cursor: pointer;
+    color: var(--color);
+    text-decoration: underline;
+}
+
+
+.navmenu{
+    display: flex;
+    font-size: 1.3em;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+
+li{
+    list-style: none;
+    margin: 0em 1em;
+    padding: 10px 10px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 4px 4px;
+    transition: all 0.3s;
+}
+
+a:hover{
+    border: 2px solid var(--color);
+    border-radius: 3px;
+    color: var(--color);
+}
+
+header::before{
+    content: "";
+    background: url("https://images.unsplash.com/photo-1510076857177-7470076d4098?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+hr + section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    height: 90vh;
+    flex-flow: column;
+    font-size: 51px; 
+}
+
+
+section> h6{
+    font-weight: lighter;
+    font-size: 24px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+section p{
+    position: relative;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: partha 3s none 0s;
+}
+
+@keyframes partha {
+    from{
+        text-decoration: underline;
+    }
+    to{
+        text-decoration: underline;
+    }
+}
+
+section> h5, p{
+    font-weight: lighter;
+    font-family: 'Playball',cursive;
+}
+
+
+.dates{
+    margin: 10px 0px;
+}
+
+
+.story{
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /* border: 2px solid greenyellow; */
+    /* height: 50vh; */
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    background-color: white;
+    color: black;   
+}
+
+.story::after{
+    content: "";
+    background: url("https://preview.colorlib.com/theme/wedding2/images/xBackground_Circle.png.pagespeed.ic.ypagTo5i3K.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -7;
+    opacity: 1;
+}
+
+.story p{
+    display: flex;
+    font-size: 39px;
+    text-align: center;
+    margin: 70px 0px;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+
+span{
+    width: 0px;
+    position: relative;
+    left: -83px;
+    top: -35px;
+    font-weight: bold;
+    cursor: none;
+}
+
+
+h2{
+    font-style: italic;
+    font-size: 5rem;
+}
+
+
+.ceremony{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    /* height: 50vh; */
+    /* border: 2px solid navy; */
+}
+
+
+.ceremony::before{
+    content: "";
+    background: url("https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -4;
+    opacity: 0.5;
+}
+
+
+.ceremony > h2{
+    display: flex;
+    font-size: 4em;
+    text-align: center;
+}
+
+
+.ceremony p{
+    display: flex;
+    font-size: 32px;
+    text-align: center;
+    margin: 98px 0px;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+}
+
+
+.gallery h1{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Courgette', cursive;
+    font-size: 4rem;
+    margin-bottom: 29px;
+}
+
+
+.gallerycontainer{
+    display: flex;
+    /* border: 2px solid black; */
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.boxes{
+    width: 17em;
+    height: 17em;
+    border: 2px solid greenyellow;
+    margin: 17px 39px;
+    transition: all 0.3s;
+}
+
+.boxes:hover{
+    transform: scale(1.1);
+}
+
+
+#box1{
+    background: url("https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80") no-repeat center center/cover;
+}
+
+
+#box2{
+    background: url("https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80") no-repeat center center/cover;
+}
+
+
+#box3{
+    background: url("https://images.unsplash.com/photo-1601120979673-b3f6f4c7d2ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80") no-repeat center center/cover;
+}
+
+
+#box4{
+    background: url("https://images.unsplash.com/photo-1519379169146-d4b170447caa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80") no-repeat center center/cover;
+}
+
+
+#box5{
+    background: url("https://images.unsplash.com/photo-1560505605-f300b17028d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80") no-repeat center center/cover;
+}
+
+
+#box6{
+    background: url("https://images.unsplash.com/photo-1601482441062-b9f13131f33a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80") no-repeat center center/cover;
+}
+
+
+@media only screen and (max-width: 730px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    hr{
+        position: relative;
+        top: 58px;
+    }
+
+    li{
+        list-style: none;
+    /* margin: 0em 1em; */
+        padding: 10px 10px;
+    }
+}
